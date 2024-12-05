@@ -29,7 +29,7 @@ defaults:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       PROJECT_NAME: ${{vars.COSCINE_PROJECT_NAME}}
       RESOURCE_NAME: ${{vars.COSCINE_RESOURCE_NAME}}

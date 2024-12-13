@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PROJECT_NAME: ${{ vars.COSCINE_PROJECT_NAME }}
-      COSCINE_API_TOKEN: ${{ vars.COSCINE_API_TOKEN }}
+      COSCINE_API_TOKEN: ${{ secrets.COSCINE_API_TOKEN }} 
     steps:
       - name: Check Python version
         run: python -V

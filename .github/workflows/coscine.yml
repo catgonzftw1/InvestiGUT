@@ -49,7 +49,20 @@ jobs:
       - name: Install requirements
         working-directory: ./coscine-static-site-generator/
         run: pip install -r requirements.txt
+        
+      - name: Clean workspace
+        run: |
+          echo "Cleaning workspace..."
+          rm -rf ./public
+          mkdir -p ./public
 
+      - name: Copy webpage
+        run: |
+          pwd
+          cp index.html public/
+          cp style.css public/
+          cp coscine_logo.gif public/
+          
       - name: Build static site and generate navigation tabs
         working-directory: ./coscine-static-site-generator/
         run: |

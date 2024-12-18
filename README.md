@@ -15,3 +15,6 @@ InvestiGUT has been designed to allow users to study the ecological prevalence o
 MiProGut is the protein catalogue generated using lineage-specific gene prediction tools from Schmitz et al (2025). The original protein predictions form the database for InvestiGUT, while the dereplicated protein catalogues can use used to better align against omic datasets and uncover previously unseen associations.
 
 License GPL 3.0
+
+[![DOI](https://zenodo.org/badge/904070276.svg)](https://doi.org/10.5281/zenodo.14513122)
+

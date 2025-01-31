@@ -74,11 +74,12 @@ jobs:
             mkdir -p ../public/$RESOURCE
             python -m src -t "$COSCINE_API_TOKEN" -p "$PROJECT_NAME" -r "$RESOURCE" -y -o ../public/"$RESOURCE"
           done
-          
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
+
 
   deploy:
     environment:

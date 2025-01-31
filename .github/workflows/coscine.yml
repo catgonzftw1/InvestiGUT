@@ -32,7 +32,7 @@ jobs:
         run: sudo apt install -y git
 
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Copy webpage
         run: |
@@ -76,7 +76,7 @@ jobs:
           done
           
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
@@ -89,4 +89,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/upload-artifact@v4
+        uses: actions/deploy-pages@v4
